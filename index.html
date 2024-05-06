@@ -19,43 +19,71 @@
 <body>
 
   <!-- Rating state start -->
-  <section class="rating">
-    <form action="#">
+  <section class="container">
+
+    <form action="#" id="form">
+
       <span class="img-container">
-        <img src="images/icon-star.svg" class="star" alt="">
+        <img src="images/icon-star.svg" class="star" alt="" width="20" height="20">
       </span>
+
       <h1>How did we do?</h1>
     
       <p class="text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     
       <div class="radio-container">
-        <input type="radio" name="rating" id="rating1" value="1">
-        <input type="radio" name="rating" id="rating2" value="2">
-        <input type="radio" name="rating" id="rating3" value="3">
-        <input type="radio" name="rating" id="rating4" value="4">
-        <input type="radio" name="rating" id="rating5" value="5">
+        <label>
+          <input type="radio" name="rating" id="rating1" value="1">
+          <span>1 <span class="sr-only">star</span></span>
+        </label>
+
+        <label>
+          <input type="radio" name="rating" id="rating2" value="2">
+          <span>2 <span class="sr-only">stars</span></span>
+        </label>
+
+        <label>
+          <input type="radio" name="rating" id="rating3" value="3">
+          <span>3 <span class="sr-only">stars</span></span>
+        </label>
+
+        <label>
+          <input type="radio" name="rating" id="rating4" value="4">
+          <span>4 <span class="sr-only">stars</span></span>
+        </label>
+
+        <label>
+          <input type="radio" name="rating" id="rating5" value="5">
+          <span>5 <span class="sr-only">stars</span></span>
+        </label>
+        
       </div>
     
       <button>Submit</button>
+      
     </form>
   </section>
 
-  <!-- Rating state end -->
+  <template id="template">
+    <!-- Rating state end -->
+    
+    <!-- Thank you state start -->
+    <section class="container thank-you">
+    
+        <img src="images/illustration-thank-you.svg" alt="">
+        <p>You selected <span></span> out of 5</p>
+    
+        <h1>Thank you!</h1>
+    
+        <p>We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    
+      </section>
+    
+    <!-- Thank you state end -->
 
-  <!-- Thank you state start -->
-  <!-- <section class="thank-you">
+  </template>
 
-    <img src="images/illustration-thank-you.svg" alt="">
-    <span>You selected <span></span> out of 5</span>
-
-    <h2>Thank you!</h2>
-
-    <p>We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch!</p>
-
-  </section> -->
-
-  <!-- Thank you state end -->
-
+  <script src="script.js"></script>
 </body>
 </html>

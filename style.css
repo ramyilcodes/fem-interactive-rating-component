@@ -20,7 +20,7 @@ body{
     font-size: 15px;
 }
 
-.rating{
+.container{
     background-color: hsl(213, 19%, 18%);
     display: grid;
     place-content: center;
@@ -34,6 +34,7 @@ body{
     background-color: hsla(0, 0%, 100%, 0.148);
     border-radius: 50%;
     width: 3rem;
+    height: 3rem;
     padding:0.71rem;
     margin-bottom:2rem;
     display: flex;
@@ -41,7 +42,7 @@ body{
     align-items: center;
 }
 
-h1,h2{
+h1{
     color: white;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -57,7 +58,7 @@ h1,h2{
     justify-content: space-between;
 }
 input[type=radio]{
-    appearance: none;
+    /* appearance: none; */
     width: 2.5rem;
     border: none;
     background-color: (0, 0%, 100%, 0.148);
@@ -72,4 +73,12 @@ button{
     padding: 0.5rem 5rem;
     text-transform: uppercase;
     cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    transition: 0.3s;
 }
